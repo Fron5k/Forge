@@ -1,0 +1,101 @@
+# If you add a page, you must add it to the index here
+nav:
+  - Home: 'index.md'
+  - Style Guide: 'styleguide.md'
+  - Getting Started:
+    - Home: 'gettingstarted/index.md'
+    - Structuring Your Mod: 'gettingstarted/structuring.md'
+    - Forge Update Checker: 'gettingstarted/autoupdate.md'
+    - Debug Profiler: 'gettingstarted/debugprofiler.md'
+  - Concepts:
+    - Sides: 'concepts/sides.md'
+    - Resources: 'concepts/resources.md'
+    - Data: 'concepts/data.md'
+    - Registries: 'concepts/registries.md'
+    - Mod Lifecycle: 'concepts/lifecycle.md'
+    - Internationalization and localization: 'concepts/internationalization.md'
+  - Blocks:
+    - Home: 'blocks/blocks.md'
+    - Blockstates: 'blocks/states.md'
+    - Interaction: 'blocks/interaction.md'
+#  - Animation API:
+#    - Intro to the Animation API: 'animation/intro.md'
+#    - Armatures: 'animation/armature.md'
+#    - Animation State Machines: 'animation/asm.md'
+#    - Using the API: 'animation/implementing.md'
+  - Tile Entities:
+    - Home: 'tileentities/tileentity.md'
+    - Renderer: 'tileentities/tesr.md'
+  - Items:
+    - Home: 'items/items.md'
+    - Loot Modification: 'items/globallootmodifiers.md'
+  - Models:
+    - Intro to Models: 'models/introduction.md'
+    - Model Files: 'models/files.md'
+    - Blockstates:
+      - Intro to Blockstate JSONs: 'models/blockstates/introduction.md'
+    - Coloring Textures: 'models/color.md'
+    - Item Property Overrides: 'models/overrides.md'
+    - Advanced Models:
+      - IBakedModel: 'models/advanced/ibakedmodel.md'
+      - Perspective: 'models/advanced/perspective.md'
+      - ItemOverrideList: 'models/advanced/itemoverridelist.md'
+  - Rendering:
+    - ItemStackTileEntityRenderer: 'rendering/ister.md'
+  - Data Generation:
+    - Introduction: 'datagen/intro.md'
+    - Model Providers: 'datagen/modelproviders.md'
+  - Events:
+    - Basic Usage: 'events/intro.md'
+  - Networking:
+    - Home: 'networking/index.md'
+    - Overview: 'networking/overview.md'
+    - SimpleImpl: 'networking/simpleimpl.md'
+    - Entities: 'networking/entities.md'
+  - Data Storage:
+    - Capabilities: 'datastorage/capabilities.md'
+    - World Saved Data: 'datastorage/worldsaveddata.md'
+  - Utilities:
+    - Recipes: 'utilities/recipes.md'
+    - Tags: 'utilities/tags.md'
+  - Effects:
+    - Particles: 'effects/particles.md'
+    - Sounds: 'effects/sounds.md'
+  - Conventions:
+    - Versioning: 'conventions/versioning.md'
+    - Locations: 'conventions/locations.md'
+  - Advanced Topics:
+    - Access Transformers: 'advanced/accesstransformers.md'
+  - Contributing to Forge:
+    - Getting Started: 'forgedev/index.md'
+    - PR Guidelines: 'forgedev/prguidelines.md'
+  - Legacy Versions:
+    - Home: 'legacy/index.md'
+    - Porting to 1.16: 'legacy/porting.md'
+
+# Do not edit in PRs below here
+site_name: Forge Documentation
+site_url: https://mcforge.readthedocs.io/en/1.16.x/
+
+markdown_extensions:
+  - admonition
+  - smarty
+  - sane_lists
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: false
+  - toc:
+      permalink: ' '
+
+theme:
+  name: readthedocs
+  custom_dir: forge_theme
+
+extra:
+  current_version: 1.16.x
+  versions:
+    1.16.x: 1.16.x
+    1.18.x: 1.18.x
+
+extra_css:
+  - css/version_warning_fix.css
